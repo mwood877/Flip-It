@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+            <a href="/logout"><button type="button" class="logout">Logout</button></a>
+            <div id="friends-column" class="column">
+                <h1>Your Friends, Your followers, Timelines</h1>
+                <ul id="friends">
+                    <!-- creates loop to display all your firends -->
+                    <% friends.forEach(function(friend) { %>
+                        <li uid="<%= friend.twitter_id %>" class="friend">
+                            <img class="profile-image" src="<%= friend.profile_image_url %>">
+                            <p>
+                                <span class="name">
+                                    <%= friend.name %>
+                                </span>
+                                <span class="screen-name">
+                                    <%= friend.screen_name %>
+                                </span>
+                            </p>
+                            <p class="location">
+                                <%= friend.location %>
+                            </p>
+                        </li>
+                    <% })%>;
+                </ul>
+            </div>
+            <div id="notes-column" class="column">
+                <h1>Notes</h1>
+                <ul id="notes">
+
+                </ul>
+                <button type="submit">DM notes</button>
+            </div>
+
+    </div>
+</body>
+</html>

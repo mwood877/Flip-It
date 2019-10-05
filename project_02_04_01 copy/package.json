@@ -1,0 +1,33 @@
+{
+  "name": "twitter-nodes",
+  "version": "1.0.0",
+  "description": "An application for leaving notes on twitter friends and followers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Wood",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "local": "^0.3.3",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.3.2",
+    "oauth": "^0.9.15",
+    "tunnel": "0.0.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MWood429/project_02_04_01.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MWood429/project_02_04_01/issues"
+  },
+  "homepage": "https://github.com/MWood429/project_02_04_01#readme"
+}
